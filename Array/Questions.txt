@@ -1,0 +1,32 @@
+ 1. Largest element in an array
+    Brute force- sort and return (n-1)th element, O(nlog(n))
+    Optimal- initialise largest element with 0th element and compare with the rest of the elements, O(n)
+
+ 2. 2nd largest
+    Brute- sort and run a loop from n-2 to 0 to find the second largest, O(nlog(n) + n)
+    Better- run loop to find largest, run another loop to check each element if it is larger than others and smaller than largest, O(2n)
+    Optimal- initialise largest with 0th element and slargest with INT_MIN. run loop and if largest found then update largest and set slargest with largest, and keep checking if each element is smaller than slargest
+
+ 3. Check if sorted
+    check if ith < (i+1), else return false, at the end return true
+
+ 4. Remove duplicate elements and return no. of unique elements 
+    Brute- insert in set, pop elements from set and store in array and increment the index, return index, TC- O(nlog(n)+n) & SC- O(n)
+    Optimal- a pointer(ind) at 0th index then we traverse the loop with another pointer and from 1 to n, check where both pointer points at different elements.
+
+ 5. Left rotate an array by one place
+    store the 0th index index then a[i-1]=a[i], O(n)
+
+ 6. Left rotate by D spaces
+    Brute- store the first D elements in an another array, now shift by (n-d) index, now place the elements stored in another array, TC- O(n+d), SC- O(d)
+    Optimal- first reverse (0-to-d) elements, then (d-n) elements, then reverse the whole array, TC- O(2n), SC- O(1)
+
+ 7. Move zeroes to end
+    Brute- push_back non-zero elements in a new vector, copy the vector in original array and now run the loop from size of vector to nth place and insert 0s in the original array. TC- O(2n) SC- O(n)
+    Optimal- find 1st zero and come out of the loop, store index of occurance of 1st zero in j, now run loop from j to n, in that loop see where is a non zero element and swap, increment j by 1.
+
+ 8. Union of 2 arrays
+    Brute- take a set and insert elements, TC- O(n1logn1 + n2logn2) + O(n1+n2) SC- O(n1+n2)
+    Optimal- array is sorted, take 2 pointers - 1 on each, store the first element of array1 and then compare with array2 if element of 1st is greater than 2nd, move 2nd pointer forward, else if element of 1st is compared with previously added element if not eqaul then add otherwise move pointer forward, when we reach the end of any array then add the elements of the other array after checking if it is not present. TC- 0(n1+n2), SC- 0(n1+n2)
+
+ 9. 
