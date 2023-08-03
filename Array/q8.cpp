@@ -31,5 +31,17 @@ vector <int> unionOfArray(int a1[], int n1, int a2[], int n2){
             j++;
         }
     }
+    while(i < n1){
+        if(a1[i]<= a2[j]){
+            if(v.size()==0 || v.back()!=a1[i])
+            v.push_back(a1[i]);
+            i++;
+        }
+    }
+    while(j<n2){
+        if(v.size()==0 || v.back()!=a2[j])
+        v.push_back(a2[j]);
+        j++;
+    }
     return v;
 }
