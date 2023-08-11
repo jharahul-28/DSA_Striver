@@ -32,3 +32,24 @@
  9. Intersesction of two sorted arrays
     Brute- Take a visited array, which contains flag whether the element is already taken in the Intersesction array. It will be for the array with fewer elements. now we iterate through the other array and search for the occurance of each element in the fewer array , and then again we check if the flag. TC- O(n*m)
     Optimal- two pointers pointing on the two arrays, if we find a match we increment both the pointers otherwise the smaller one.
+
+ 10. Missing number
+    Brute: linear search, TC:O(N*N), SC:O(1)
+    Better: use hashing TC: O(2*N), SC: O(n)
+    Optimal: sum-take sum of each number from 1 to n, then take the sum of the given numbers, TC: O(N), OC: O(1) 
+      xor- take xor of the given array, take xor from 1 till n, take xor of the two computed xor(s), TC: O(N), OC: O(1) 
+      while summing the sum might cross the limit of INTEGER, taking long long will take extra spaces
+
+ 11. Max number of 1s
+    Optimal: take a max1=0, and then iterate, if found 1 then increment counter and check max(cnt, max1), else if not found set counter to zero
+
+ 12. Find the number that appears once and others twice
+    Brute: iterate through the array and search for each element after that index using linear search, if not found then return the number else proceed with the outer loop, TC:O(N*N), SC:O(1)
+    Better: hashing- TC: O(2N), SC: O(maxelement)
+            map- TC- O(nlog(n))+ O(n), SC- O(n/2 + 1)
+    Optimal: Xor- TC: O(N), SC: O(1)
+
+ 13. Longest subarray with sum K
+    Brute: run loop i for starting index of subarray, run loop j for adding element of subarray, if sum of each element equals k then check for max length. TC- O(n^2)
+    Better (optimal if array element might be -ve): use hashing, we take a subarray from beginning and take it till each individual element, we take the sum from beginning of subarray till the end of subarray (x), now for sum of subarray of subrray to be 'k', the sum should be 'x-k', we will keep hashing each sum and look for 'x-k', if found then check for max length. TC: O(n log(n)) for ordered map , O(n*1) or O(n*n) for unordered map, SC: O(n)
+    Optimal (if all array element is +ve): two pointer approach, if keep adding array elements and incrementing left pointer until sum of subarray is less than 'k', when equal we check for max length and increment right pointer, when greater we increment left pointer
