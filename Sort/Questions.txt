@@ -1,0 +1,16 @@
+ Q1 Selection Sort
+    Select and swap. Starting from 0th index, select the min element and swap, then move to next element. TC: O(n^2)
+
+ Q2 Bubble Sort
+    Push the maximum element to the last by doing adjacent swap. First we run the loop for (n-1) to 0 as first we run inner loop, which push max element to last, for (n-1) times , then (n-2)times .... 0 times, each time push the max to last position of subarray. To optimise the code we can put a flag to see if at all the array is sorted and npo need of swapping. TC: O(n^2), best case- TC: O(n) 
+
+ Q3 Insertion Sort
+    Starting from left part, we move right and place each element in its correct position for every subarray formed, we swap adjacent when necessary. TC: O(n^2), best case- TC: O(n) 
+
+ Q4 Merge Sort
+    Divide and merge. We divide the array into 2 parts, from lowest index to mid of subarray, then from mid+1 to highest index of the subarray. When we cant divide furthur and are left with only one element we move up by merging in sorted order. Use recurrsion. TC: O(n*log(n)) SC: O(n)
+
+ Q5 Quick Sort
+    Pick a pivot(recommended to set the first element of subarray) and place it in its soreted array position, smaller element on left and larger on the right, repeat.
+
+ Note: See in website notes the recursive approach to bubble and insertion sort
