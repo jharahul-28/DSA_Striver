@@ -12,7 +12,7 @@
 
  4. Remove duplicate elements and return no. of unique elements 
     Brute- insert in set, pop elements from set and store in array and increment the index, return index, TC- O(nlog(n)+n) & SC- O(n)
-    Optimal- a pointer(ind) at 0th index then we traverse the loop with another pointer and from 1 to n, check where both pointer points at different elements.
+    Optimal- a pointer(ind) at 0th index then we traverse the loop with another pointer and from 1 to n, check where both pointer points at different elements (Sorted array only).
 
  5. Left rotate an array by one place
     store the 0th index index then a[i-1]=a[i], O(n)
@@ -52,4 +52,4 @@
  13. Longest subarray with sum K
     Brute: run loop i for starting index of subarray, run loop j for adding element of subarray, if sum of each element equals k then check for max length. TC- O(n^2)
     Better (optimal if array element might be -ve): use hashing, we take a subarray from beginning and take it till each individual element, we take the sum from beginning of subarray till the end of subarray (x), now for sum of subarray of subrray to be 'k', the sum should be 'x-k', we will keep hashing each sum and look for 'x-k', if found then check for max length. TC: O(n log(n)) for ordered map , O(n*1) or O(n*n) for unordered map, SC: O(n)
-    Optimal (if all array element is +ve): two pointer approach, if keep adding array elements and incrementing left pointer until sum of subarray is less than 'k', when equal we check for max length and increment right pointer, when greater we increment left pointer
+    Optimal (if all array element is +ve): two pointer approach, if keep adding array elements and incrementing left pointer until sum of subarray is less than 'k', when equal we check for max length and increment right pointer, when greater we increment left pointer.

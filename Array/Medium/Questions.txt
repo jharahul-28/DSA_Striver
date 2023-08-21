@@ -1,0 +1,63 @@
+ Q1 2sum problem
+     Brute- Choose an element and traverse the whole array and look if we get the reuired sum. TC: O(n^2) SC: O(1)
+     Better- Use hashmap, we iterate through the array, we loop for target-a[i], if present then we have the answer else we enter the a[i] with i in map as key and value, resp. TC: O(n*log(n)) SC: O(n). Preferred approach if we wish to return the index.
+     Use two pointer approach after sorting. We place two pointers at oppposite end, we take the sum of the elements pointed at by the pointers, as the array is sorted if we move the left pointer forward then the sum increases and if we move the right pointer backward the sum decreases. TC: O(n) +O(n*log(n)) SC: O(n),as we sort the array. Preferred if we need to tell YES or NO.
+
+ Q2 Sort an array of 0,1,2
+     Brute- Sort the array. TC: O(n*log(n)) SC: O(1)
+     Better- Count the no. of 0,1,2. Run loops and place the 0,1,2s according to the counters. TC: O(2n) SC: O(1).
+     Optimal- Deutch National Flag Algorithm- We take 3 pointers, low,mid,high , dividing in 4 regions, 0 to low-1 (containing all 0s), low to mid-1 (containing all 1), mid to high (containing unsorted 0,1,2), high+1 to (n-1) (containing all 2s). For mid to high we have three options and required measures, if 0 then swap with low and increment low and mid, if 1 then the array till mid is already sorted hence increment mid, if 2 then swap with high and decrement high. The size of unsorted array goes on decresing and we obtain sorted array. TC: O(n) SC: O(1).
+
+ Q3 Majority element
+     Brute- Iterate through the loop and count the occurence of each element and check if it is greater than (n/2), if yes then return the number. TC: O(n^2) SC: O(1)
+     Better- Hashing, iterate through the loop and increase the counter of each element, then iterate through the hash-map and see if any element has frequency greater than (n/2), then return the element. TC: O(n) +O(n*log(n)) SC: O(n)
+     Optimal- Moore's Voting Algorithm. take 2 variables element and counter, if counter is 0 then element = arr[i] and increase the counter if same element appears otherwise decrease the counter, at the end when we have finished the iteration, the ELEMENT 's frequency has to be checked if it is >(n/2). TC: O(n)+O(n)(if the array might not contain a majority element), SC: O(1).
+
+ Q4 Maximum sum, returning sum
+     Brute: take all subarray and find sum then check for maxsum. TC: O(n^3) SC: O(1).
+     Better: reduce from 3 to 2 loops. TC: O(n^2) SC: O(1).
+     Optimal: we keep adding each element until there sum < 0, if sum>=0 then they are worth carrying forward, upon adding we see if that sum is > maxsum and then maxsum= sum, if sum<0 then we keep sum=0. TC: O(n) SC: O(1).
+
+     Maximum sum, returning subarray
+     Optimal: we keep adding each element until there sum < 0, if sum>=0 then they are worth carrying forward, upon adding we see if that sum is > maxsum and then maxsum= sum then it means the current position is the ending of our subarray, if sum<0 then we keep sum=0 now that means this is the starting position of our required subarray. TC: O(n) SC: O(1).
+
+ Q5 Stock Buy Sell
+     Optimal: We will start from the left, for each element we will subtract the least element preceding the current element in the array, to get max profit we compare the current profit with the previous best profit. TC: O(n) SC: O(1).
+
+ Q6 Alternate arrangement of +ve and -ve numbers
+    (Equal no. of +ve and -ve)
+     Brute: Store +ves in an array and -ves in another array. First push +ve then -ve element one by one in another array. TC: O(n+n/2) SC: O(n).
+     Better: Iterate through the array and if +ve store at even position, else store at odd position in a new array.
+     TC: O(n) SC: O(n).
+     (No. of +ve and -ve !equal)
+     Store +ves in an array and -ves in another array. First push +ve then -ve element one by one in another array until one of the array gets exhausted then fill the other array leftovers to the end of the answer.
+
+ Q7 Next Permutation
+     Brute: Store all the permutations, linear search for the given input and , the next permutation is the required answer.
+     Better: Apply the next_permutation stl library.
+     Logic of next_permutation: from the last find the index where a[i]<a[i+1], swap with the index now sort from index+1 to n-1.
+
+ Q8 Leaders in an Array
+     Brute: for each element, check in the entire remaining array
+     Better: if any element is greater than the max element on the right then it is a part of the answer.
+
+ Q9 Longest consequetive sequence in an array
+     Brute: for each element, linear search for +1 of the element, do necessary updation.  O(n*n) SC: O(1)
+     better: see if next element is +1 of current element, if yes increase counter and update longest subsequence, if equal then continue, else put counter =0. TC: O(nLog(n)+ n) SC: O(1)
+     Optimal: Create an unordered set and store each element. traverse each element of the set and check if that element's predecessor exists or not, if not then look for its successor, if found then increase counter, then check for the longest subsequence found. TC: O(3n) SC: O(n)
+
+ Q10 Set zero matrix
+     Brute: traverse through the matrix and where we find 0, we set the column and row to -1, after finding and changing we again traverse and change -1 to 0. TC: O((n*m)(n+m)+(n+m)) SC: O(1).
+     Better: take 2 array, row nd col, traverse metrix, when 0 found, flag the row and column as 1. again traverse and where we find the flag 1 in row or col array, we make the column and row 0. TC: O(2*(n*m)) SC: O(n)+O(m).
+     Optimal: similar as better but we dont take new col and row array, instead use the 0th row as col array and 0th column as row array, to be a check of 1st column we use a variable to store the flag.
+
+ Q11 Rotate matrix/ image by 90
+     Brute: take an answer matrix, now observe the pattern and store the elements in answer matrix. SC: O(n*m)
+     Optimal: transpose and reverse the rows. SC: O(1)
+
+ Q12 Spiral matrix
+     store top elements keeping top constant and iterating through left to right, increment top, store right elements keeping right constant and iterating through top to bottom, decrement right, store bottom elements keeping bottom constant and iterating through right to left , increment bottom, store left elements keeping left constant and iterating through bottom to top, increment left. We need to see if bottom and left operations need to be done or not.
+
+ Q13 Subarray Sum Equals K
+     Brute & Better: Approach similar to finding longest subarray with sum 'k'.
+     Optimal: Approach similar to finding longest subarray with sum 'k' but in hash we have to store the frequency of getting preSum.
