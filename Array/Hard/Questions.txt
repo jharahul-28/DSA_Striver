@@ -1,0 +1,49 @@
+ Q1 Pascal Triangle
+     Given row and column, find element at that position
+         Find rCc=n!/((n-r)!*r!), thats the element. TC: O(r)
+     Print any row of the pascal triangle
+         Brute: run a loop and do the above for each element. TC: O(r*n)
+         Better: 1st and last element is always 1, for other elements we can see we are multiplying (row - col)/col.
+     Print the entire triangle
+         Run a loop for each row and do the above 
+
+ Q2 Majority element(n/3)
+     Brute- traverse each element, for those each element check its frequency. TC: O(n*n)
+     Better- hash the element and its frequency, while storing and incrementing frequency check if it exceeds n/3 any time, if yes then store it in the answer. TC: O(n) SC: O(n)
+     Optimal- as we did for majority (n/2), but this time we take for 2 elements as we have to find for n/3. TC: O(2n).
+
+ Q3 3 sum
+     Brute: for 3 elements we run 3 nested loop. TC: O(n*n*n)
+     Better: 2 loops and hashmap. we calculate the -ve sum of 2 sum using 2 loops and search for the number in hashmap to get sum as 0. TC: O(n*n)+ O(log(m)) SC: O(n) + O(no. of unique elements * 2)
+     Optimal: for each element we apply 2 pointer approach, first we sort, we keep 2 pointer at i+1 and n-1, we sum up, if 0 then we store it in our answer else if >0 then we move the right pointer to left as on left we always get smaller or equal element else we move left pointer one step right. TC: O(n*n) SC:O(no. of unique elements * 2)
+
+ Q4 4sum
+     Brute: 3 nested loops, check for each element. TC: O(n*n*n*n)
+     Better: take 3 pointers and hashmap, i, j=i+1, k=j+1, now we keep moving the k forward and storing the elements between j and k in it, we keep checking if we have the required 4th element in the hashmap or not, if present we store it in answer else we move forward. TC: O(n*n*n)+ O(log(m))+ O(nlog(n)) SC:O(n + 2*no. of quad)
+     Optimal: similar to 3 sum, here we have 2 constant pointers + 2pointer approach.  TC: O(n*n*n)+ O(nlog(n)) SC:O(no. of quad) to return the answer.
+
+ Q5 Longest subarray with sum 0
+     Brute: Take two loops and check for each subarray that can be formed. TC:O(n*n) SC:(1)
+     Optimal: for the sum of a subarray array to be 0, the sum of the larger subarray sould be equal to the sum of the remaining part, we store the sum from the beginning, and we see if we have preSum== any preSum stored in hashmap earlier, if yes we take its length, otherwise we stroe the new preSum. TC:O(n) SC:(n)
+
+ Q6 Count no. of subarray with given xor 'k'
+     Brute: generate all subarrays and keep calculating the xor. TC:O(n*2)
+     Optimal: we keep storing the xor we calculate from start and for xor to be equal to k, we must have an element xr^k in the map. TC:O(n)+O(nlogn)for ordered map SC:(n)
+
+ Q7 Merge overlapping intervals
+     Brute: sort, add first interval in answer and then check if the the starting of next elements is smaller than the last pushed vector element, if yes then update the ending of interval else push the interval and the loop carries on. TC:O(n*logn + 2n) SC:O(n)
+     Optimal: we reduce from 2 nested loop to one. TC:O(n*logn + n) SC:O(n)
+
+ Q8 Merge two sorted arrays without using extra spaces(Optimal)
+     Brute: take two pointers on each array and store the smaller number in the answer-array. TC:O(2m+2n) SC:O(m+n)
+     Optimal-1: bring all the smaller no. int he first array, greater no. in the second array, by taking two pointers, after that swap both the arrays. TC: O(min(m,n)) + O(m*log m) + O(n*log n).
+     Optimal-2: TC: O(log(n+m))* O(n+m) SC: O(1)
+
+ Q9 Find the repeating and missing number where an array of size N contains no. from 1 to n
+     Brute: For each no. from 1 to N, search for its frequency, if 0 then its the missing no. , if 2 then its the repeating no. TC: O(n*n) , SC: O(1)
+     Better: In a hash array store the the frequency of each element, if frequency = 0 then its the missing no. , if 2 then its the repeating no. TC: O(2n) , SC: O(n)
+     Optimal: we subtract each element's sum with the sum of first N natural no. then we subtract each element's square sum with the sum of square of first N natural no., we get 2 equation, x*x - y*y = constant1 and x-y =constant2, we solve and get the numbers x and y
+
+ Q10 No of inversions
+     Brute: for each element traverse the entire remaining array, check for the condition and update the counter accordingly
+     Optimal: we implement the merge sort algorithm, split the array in two halves then compare, if array is sorted and left array element is greater than right array element then we can say that all the left array elements after the current will also be greater. TC:O(n * log n) SC:O(1) SC:O(n) if we need to copy the original array to prevent losing the original data

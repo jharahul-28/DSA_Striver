@@ -1,0 +1,5 @@
+ Q1 BFS
+     We take a visited array, and will mark 1 for those which are visited, initialised each index with 0. we will take a queue and push neighbours and pop to store the next neighbours and mark them as visited.
+
+ Q2 DFS
+     Similar to BFS , instead of breadth traersal we do depth traversal using recurrsion.
