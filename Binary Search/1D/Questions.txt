@@ -1,0 +1,44 @@
+ Q1 Binary Search
+    In a sorted array left elements are always smaller than right elements, if we are searching for an element then if the target > than the mid of the array then its useless to search in its lower half, hence we keep trimming down the search space. TC:O(log n)
+
+ Q2 Lower bound
+    We look for the smallest index where a[mid]>=target. TC:O(log n)
+
+ Q3 Upper bound
+    We look for the smallest index where a[mid]>=target. TC:O(log n)
+
+ Q4 Search insert position
+    We implement lower_bound
+
+ Q5 Floor and ceil
+    implement lb for ceil and for floor see if == exists, if not then a[lb-1] or we can take a leaf from lb and do minor changes to get the answer
+
+ Q6 First and last occurence of a number
+    Search for first and last individually using BS
+    First: when we find the number, we look for lower index with the number , for that we do high=mid-1
+    Last: when we find the number, we look for higher index with the number , for that we do low=mid+1
+
+    First: implement lower_bound
+    Last: index is upper_bound -1
+    Make sure if the element pointed by lower_bound and upper_bound is the targetted element and upper_bound is not pointing at the out_of_bound position
+
+ Q7 No. of occurence of a number
+    Implement upper code to find first and lst occurence then no. of occurence= (first - last + 1)
+
+ Q8 Search a number in a rotated sorted array
+    We see which side of mid is sorted, on the sorted side we check if target lies within the range of the elements present in the sorted subarray, then we change the low, high accordingly
+
+ Q9 Search a number in a rotated sorted array which contains duplicate elements
+    We apply the same code with minor change, the only edge case that fails us is when we get nums[low]=nums[mid]=nums[high], so we keep trimming the array low++ and high-- until we eliminate the case.
+
+ Q10 Search for minimum element in a rotated sorted array
+    We look which side is sorted, preferably for right side first, if right then smallest element will be nums[mid], if left then nums[low], now we have trimmed the search place to halve, we update the low, high following we repeat.
+
+ Q11 Find how many times sorted array has been rotated
+    Find the position of the min element, its position is the answer, as on 1 rotation it shifts right by 1.
+
+ Q12 Single Element in a Sorted Array
+    We can observe that on the left of single element the pair of number occur at (even,odd) index and on right its (odd,even), so if the mid and mid+1 or mid-1, whichever has the pair, is on (e,o) then the element is on right half and we can eliminate the left half, and vice-versa.
+
+ Q13 Peak Element
+    Array not sorted, we check for mid, if its not the peak element then we check which of its neighbour is greater, we change limits accordingly, not exactly largest element but similar thinking

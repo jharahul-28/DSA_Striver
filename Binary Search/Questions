@@ -1,2 +1,0 @@
- Q1 Binary Search
-    in a sorted array left elements are always smaller than right elements, if we are searching for an element then if the target > than the mid of the array then its useless to search in its lower half, hence we keep trimming down the search space. TC:O(log n)

@@ -3,3 +3,6 @@
 
  Q2 DFS
      Similar to BFS , instead of breadth traersal we do depth traversal using recurrsion.
+
+ Q3 No. of provinces- those nodes which are connected by edges, either directly or indirectly constitute a province
+     We traverse the adj list and upon finding an unvisited node we increase the counter and do dfs/bfs, all nodes constituting a province are visited and we move forward in traverse and look for unvisited and the process continues. TC: O(N) + O(v + 2e)
