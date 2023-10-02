@@ -1,0 +1,2 @@
+ Q1 Middle of the Linked List
+     For every 2 increase in no. of LL, we increase the mid pointer by 1

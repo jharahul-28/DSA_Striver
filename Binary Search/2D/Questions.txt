@@ -1,0 +1,13 @@
+ Q1 Row with max 1s
+     Implement lower bound on each Row
+
+ Q2 Search a sorted 2D Matrix
+     To complete it in log(m*n) time we need to convert 2D to 1D.
+
+ Q3 Search in a row and column-wise sorted matrix
+     If we keep a starting reference at the last element of the first row then on left we have smaller elements and on bottom we have greater elements.
+
+ Q4 Peak in 2D matrix
+     We find the max element in a row and check if its PEAK, if true then return else eliminate the smaller element containing part.
+
+ Q5 Median of 2D matrix

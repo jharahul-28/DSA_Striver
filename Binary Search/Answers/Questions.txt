@@ -1,0 +1,30 @@
+ Q1 Finding Sqrt of a number using Binary Search
+     We set the low to 2 and high to n/2, now see if mid*mid == N, else if it is greater or lesser, if lesser then we can store it for floor value, now we update limits accordingly.
+
+ Q2 Find Nth Root Of M
+     Same as above approach but while raising to the power n, we look for overflow
+
+ Q3 Koko Eating Bananas
+     We sort and look which is the largest element as that will take the least time and determine our limits, now we calculate the time that koko will take to eat banana at that pace, see if that within required time if yes it may be our possible answer and bring the high  down as we have to find the min number, if not within required time then inc low.
+
+ Q4 Minimum Number of Days to Make m Bouquets
+     We look for the smallest and largest element to set as low and high and then perform BS on the limits. 
+
+ Q5 Find the Smallest Divisor Given a Threshold
+     We know low=1 but high will be max of array element
+
+ Q7 Kth Missing Positive Number
+     At every index i there should have been i+1, so we find the diff
+
+ Q8 Maximise the min distance between the aggresive cows
+     We can see that the limits, will be from 1 to (max-min) element, then we do BS on answers
+
+ Q9 Book allocation
+     limits will be from max pages to sum of individuals books's pages
+
+ Q10 Split Array Largest Sum
+ Q11 Painter Partition
+     limits will be from max element(hour) to sum of individuals element/hour
+
+ Q12 Minimise Maximum Distance between Gas Stations
+     Brute: We need to place the stations between existing stations to Minimise, now each time we look for max distance and then increase the count of no. of stations to be installed.

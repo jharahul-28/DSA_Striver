@@ -1,0 +1,20 @@
+ Q1 Remove Outermost Parentheses
+     We set the counter of no. of previous opening Parentheses
+
+ Q2 Reverse Words in a String
+     First we remove the trailing whitespaces then we add the letters to another string and when we again encounter whitespaces we insert it to the beginning of the answer. Lastly we see if the last word was added or not. Then we remove the whitespaces from beginning and end of the answer.
+
+ Q3 Largest Odd Number in String
+     Traversing from right we look for first odd number, then substring it from 0th index.
+
+ Q4 Longest Common Prefix
+     First we check if we have only one word then that word is the answer, then we check if it has atleast first letter in  common, then we check for the remaining part.
+
+ Q5 Isomorphic Strings
+     First we check if both have same length, then we map each character and see if at any place the other is mapped with anyother character, we repeat the same process for both the strings.
+
+ Q6 Rotate String
+     We look for the pivot where the string was rotated, now we check if we shift then we get desired string, if not we look for other pivot until we have traversed the entire string.
+
+ Q7 Valid Anagram
+     We increase the frequency counter while traversing one string, decrease while traversing other, if all counters 0 then true
