@@ -1,0 +1,36 @@
+ Q1 Height of a binary tree
+     https://leetcode.com/problems/maximum-depth-of-binary-tree/
+     Recursively we find the height of the left subtree and the right subtree and find the max of the both
+
+ Q2 Check balanced binary tree
+     https://leetcode.com/problems/balanced-binary-tree/description/
+
+ Q3 Diameter of a binary tree
+     https://leetcode.com/problems/diameter-of-binary-tree/
+     Sum of largest depth of the left node-1 and largest depth of the rigth node-1, subtracting 1 because no. of edges = depth -1
+
+ Q4 Binary Tree Maximum Path Sum
+     https://leetcode.com/problems/binary-tree-maximum-path-sum/description/
+     We find the left sum and see if it is > 0, same for right, we calculate maxSum then we see which is greater left or right and return that
+
+ Q5 Same Tree
+     https://leetcode.com/problems/same-tree/description/
+     For each node check the val and check its left and right child
+
+ Q6 ZigZag traversal
+     https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/
+     We keep a flag to know whether we have to go l2r or r2l, rest is same as level order traversal
+
+ Q7 Boundary of a tree
+     https://www.codingninjas.com/studio/problems/boundary-traversal-of-binary-tree_790725?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+
+ Q8 Vertical Order Traversal of a Binary Tree
+     https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/description/
+
+ Q12 Symmetry of a Tree
+     https://leetcode.com/problems/symmetric-tree/
+     
+
+
+
+// Q8

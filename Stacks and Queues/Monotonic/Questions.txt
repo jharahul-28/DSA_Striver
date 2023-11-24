@@ -1,0 +1,8 @@
+ Q1 Next Greater Element I
+     https://leetcode.com/problems/next-greater-element-i/description/
+     Initialise a stack, push the last element, now pointer at 2nd last element, if arr[i]<st.top(), then we store it in a reference answer map which contains the element and its next greater element, else we keep poping until the stack is empty ( in this case we push the answer -1 ) or we found arr[i]<stack.top() ( we push the answer as stack.top()), we push the element int the stack.
+     Logic is we store the element in decreasing order from top of stack, when we find an element which is greater than the stack.top we pop until... because the smaller elements can never be next greater element
+
+ Q2 Next Greater Element II
+     https://leetcode.com/problems/next-greater-element-ii/description/
+     Just traverse and update stack acc. to previous question and then the process remains same.

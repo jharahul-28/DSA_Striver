@@ -1,0 +1,28 @@
+ Q1 Create Binary Tree
+     https://www.codingninjas.com/studio/problems/create-binary-tree_8360671?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+     
+ Q5 Preorder traversal using recursion
+     https://leetcode.com/problems/binary-tree-preorder-traversal/
+
+ Q6 Inorder traversal using recursion
+     https://leetcode.com/problems/binary-tree-inorder-traversal/description/
+
+ Q7 Postorder traversal using recursion
+     https://leetcode.com/problems/binary-tree-postorder-traversal/
+
+ Q8 Levelorder traversal
+     https://leetcode.com/problems/binary-tree-level-order-traversal/description/
+
+ Q9 Preorder traversal without recursion
+     https://leetcode.com/problems/binary-tree-preorder-traversal/description/
+     Used stack , first stored right then left
+
+ Q10 Inorder traversal without recursion
+     https://leetcode.com/problems/binary-tree-inorder-traversal/description/
+
+ Q11 Postorder traversal using 2 stacks
+     https://leetcode.com/problems/binary-tree-postorder-traversal/description/
+
+ Q13 Pre, Post, Inorder in one traversal
+     https://www.codingninjas.com/studio/problems/tree-traversals_981269?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+     We count the number of times we have visited the node, if once then it will pushed in preorder and left node has to be taken into account, if twice then pushed in inorder and right node has to be taken into account, else it is pushed into postorder.

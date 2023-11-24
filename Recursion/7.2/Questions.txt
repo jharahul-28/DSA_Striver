@@ -1,0 +1,4 @@
+ Q1 Binary strings with no consecutive 1s
+     If previous number was 1 then we can add 0, if 0 then we can add both 1 and 9
+
+ Q2 Generate Paranthesis

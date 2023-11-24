@@ -1,0 +1,8 @@
+ Q1 Remove nodes with value k
+     Same as LLL, just we have to change the next pointer of prev node too and keep in mind that when we are deleting the 1st node we must shift the head pointer too.
+
+ Q2 Pairs with given sum
+     Same as two-sum of array
+
+ Q3 Remove duplicates from sorted DLL
+     

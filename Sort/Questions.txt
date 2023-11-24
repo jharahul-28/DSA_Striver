@@ -11,6 +11,6 @@
     Divide and merge. We divide the array into 2 parts, from lowest index to mid of subarray, then from mid+1 to highest index of the subarray. When we cant divide furthur and are left with only one element we move up by merging in sorted order. Use recurrsion. TC: O(n*log(n)) SC: O(n)
 
  Q5 Quick Sort
-    Pick a pivot(recommended to set the first element of subarray) and place it in its soreted array position, smaller element on left and larger on the right, repeat.
+    Pick a pivot(recommended to set the first element of subarray) and place it in its sorted array position, smaller element on left and larger on the right, repeat.
 
  Note: See in website notes the recursive approach to bubble and insertion sort

@@ -1,0 +1,5 @@
+ Q1 Reverse Nodes in k-Group
+     First we count number of nodes. Get pointers on start and end nodes to be reversed, also keep pointers at its prev and next to be reversed. Then we reverse. Previous point at end. Decrement no. of nodes so that we dont reverse the left out nodes.
+
+ Q2 Rotate
+     Head moves to the last and point last node to first, its previous points to null. See min number of iterations needed.

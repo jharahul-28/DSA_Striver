@@ -18,5 +18,5 @@ int partition(vector <int> &arr, int low, int high){
 void qs(vector <int> &arr, int low, int high){
     int pIndex= partition(arr, low, high);
     qs(arr, low, pIndex-1);
-    as(arr, pIndex+1, high);
+    qs(arr, pIndex+1, high);
 }

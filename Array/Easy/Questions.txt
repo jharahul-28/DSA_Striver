@@ -29,8 +29,8 @@
     Brute- take a set and insert elements, TC- O(n1logn1 + n2logn2) + O(n1+n2) SC- O(n1+n2)
     Optimal- array is sorted, take 2 pointers - 1 on each, store the first element of array1 and then compare with array2 if element of 1st is greater than 2nd, move 2nd pointer forward, else if element of 1st is compared with previously added element if not eqaul then add otherwise move pointer forward, when we reach the end of any array then add the elements of the other array after checking if it is not present. TC- 0(n1+n2), SC- 0(n1+n2)
 
- 9. Intersesction of two sorted arrays
-    Brute- Take a visited array, which contains flag whether the element is already taken in the Intersesction array. It will be for the array with fewer elements. now we iterate through the other array and search for the occurance of each element in the fewer array , and then again we check if the flag. TC- O(n*m)
+ 9. Intersection of two sorted arrays
+    Brute- Take a visited array, which contains flag whether the element is already taken in the intersection array. It will be for the array with fewer elements. now we iterate through the other array and search for the occurance of each element in the fewer array , and then again we check if the flag. TC- O(n*m)
     Optimal- two pointers pointing on the two arrays, if we find a match we increment both the pointers otherwise the smaller one.
 
  10. Missing number

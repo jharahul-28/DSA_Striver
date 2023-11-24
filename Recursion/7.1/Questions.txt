@@ -1,0 +1,5 @@
+ Q1  Power
+     If the power is -ve, we reciprocate the answer. TC: O(log n)
+    
+ Q2 Good number
+     

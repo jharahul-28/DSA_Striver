@@ -1,2 +1,44 @@
  Q1 Middle of the Linked List
      For every 2 increase in no. of LL, we increase the mid pointer by 1
+     
+ Q2 Reverse Linked List (iterative)
+     Use 3 pointers
+
+ Q3 Reverse Linked List (recurssive)
+
+ Q4 Check for a cycle in linked List
+     Brute: Store the node location and its value in a map. TC:O(n) SC:O(n)
+     Optimal: Move 1 pointer by 1 step and other pointer by 2 step forward, if NULL encountered by any then false else s==d then true
+
+ Q5 Return the node where the cycle begins
+     Same approach as Q4 brute
+
+ Q6 Find length of Loop
+     First we check if there is a loop or not. Then we find any element of loop and then we keep increasing the counter until we have found the same element and then we return.
+
+ Q7 Palindrome
+     Find middle, then reverse after middle, then a pointer at mid->next and other at start check if both has same val.
+
+ Q8 Even odd segregate
+     Point at alternate
+
+ Q9 Remove nth node from the back
+     Reverse, then remove the nth node then again reverse. TC:O(3n) SC:O(1)
+     Store node and next node address in vector, point at the desired node from behind using vector index and then change the next pointer of the vector. TC:O(n) SC:O(n)
+
+ Q10 Remove the middle node
+     In the course of finding the middle keep storing the node previous to middle node, remove the middle node
+
+ Q12 Sort 0,1,2
+     0 node should point at other 0 node, same for 1 and 2, except the last ones.
+
+ Q13 Intersection of 2 LL
+     All are +ve numbers, while traversing one LL, set all to -ve, while traversing other LL , look for 1st -ve, thats the intersection, then +ve all numbers
+
+ Q14 Add one to a number represented as Linked List
+     First reverse, then start adding with care of carry, then again reverse
+
+ Q15 Add Two Numbers
+
+
+ ***    7   ***

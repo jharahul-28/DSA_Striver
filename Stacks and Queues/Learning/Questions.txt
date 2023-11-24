@@ -1,0 +1,19 @@
+ Q1 Implement Stack using Queues
+     https://leetcode.com/problems/implement-stack-using-queues/
+     All operations same, except that when we push, except the element we pushed we pop the element and push it again.
+
+ Q2 Implement queue using Stack
+     https://leetcode.com/problems/implement-queue-using-stacks/
+
+ Q3 Implement stack using Linked List
+     https://www.codingninjas.com/studio/problems/implement-stack-with-linked-list_1279905?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=1
+
+ Q4 Implement Queue Using Linked List
+     https://www.codingninjas.com/studio/problems/implement-queue-using-linked-list_8161235?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0
+     
+ Q5 Valid Parenthesis
+     https://leetcode.com/problems/valid-parentheses/description/
+
+ Q6 Min Stack
+     https://leetcode.com/problems/min-stack/description/
+     We store a pair in stack, the number and thte least number upto the push_back of that number, when we pop a number then the last number will tell which was the least number upto that point
