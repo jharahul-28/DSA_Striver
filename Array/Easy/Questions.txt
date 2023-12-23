@@ -48,7 +48,7 @@
     Better: hashing- TC: O(2N), SC: O(maxelement)
             map- TC- O(nlog(n))+ O(n), SC- O(n/2 + 1)
     Optimal: Xor- TC: O(N), SC: O(1)
-
+  
  13. Longest subarray with sum K
     Brute: run loop i for starting index of subarray, run loop j for adding element of subarray, if sum of each element equals k then check for max length. TC- O(n^2)
     Better (optimal if array element might be -ve): use hashing, we take a subarray from beginning and take it till each individual element, we take the sum from beginning of subarray till the end of subarray (x), now for sum of subarray of subrray to be 'k', the sum should be 'x-k', we will keep hashing each sum and look for 'x-k', if found then check for max length. TC: O(n log(n)) for ordered map , O(n*1) or O(n*n) for unordered map, SC: O(n)

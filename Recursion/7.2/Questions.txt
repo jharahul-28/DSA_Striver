@@ -1,4 +1,42 @@
  Q1 Binary strings with no consecutive 1s
+     https://www.codingninjas.com/studio/problems/-binary-strings-with-no-consecutive-1s._893001?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
      If previous number was 1 then we can add 0, if 0 then we can add both 1 and 9
 
  Q2 Generate Paranthesis
+     https://leetcode.com/problems/generate-parentheses/description/
+     if the number of open brackets < the number of balanced brackets required then we can add '(', if the difference of open and close brackets >then to get balanced parenthesis we can add ')'
+
+ Q3 Generate subsequence
+     https://leetcode.com/problems/subsets/description/
+     For each case we do take and not take
+
+ Q5 Subset with sum k 
+     https://www.codingninjas.com/studio/problems/subarrays-with-sum-%E2%80%98k'_6922076?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+
+
+ Q6 Subset sum
+     https://www.codingninjas.com/studio/problems/subset-sum_630213?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+
+
+ Q7 Combination Sum I
+     https://leetcode.com/problems/combination-sum/description/
+     For each call we have 2 options, take the current value, go for the next index
+
+ Q8 Combination Sum II
+     https://leetcode.com/problems/combination-sum-ii/description/
+     For each call we have index-(size -1) options, except for the ith element we have to check if the current element is not equal to its predecessor.
+
+ Q9 Subset sum I
+     https://www.codingninjas.com/studio/problems/subset-sum_3843086?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+     Take, not take, push_back sum
+
+ Q10 Subset II 
+     https://leetcode.com/problems/subsets-ii/description/
+     We create ith size subset each time, then add on the previously created subset
+
+ Q11 Combination Sum III
+     https://leetcode.com/problems/combination-sum-iii/description/
+     q12.cpp
+
+ Q12 Letter Combinations of a Phone Number
+     https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/

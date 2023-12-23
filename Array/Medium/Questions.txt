@@ -11,7 +11,7 @@
  Q3 Majority element
      Brute- Iterate through the loop and count the occurence of each element and check if it is greater than (n/2), if yes then return the number. TC: O(n^2) SC: O(1)
      Better- Hashing, iterate through the loop and increase the counter of each element, then iterate through the hash-map and see if any element has frequency greater than (n/2), then return the element. TC: O(n) +O(n*log(n)) SC: O(n)
-     Optimal- Moore's Voting Algorithm. take 2 variables element and counter, if counter is 0 then element = arr[i] and increase the counter if same element appears otherwise decrease the counter, at the end when we have finished the iteration, the ELEMENT 's frequency has to be checked if it is >(n/2). TC: O(n)+O(n)(if the array might not contain a majority element), SC: O(1).
+     Optimal- Moore's Voting Algorithm. take 2 variables element and counter, if counter is 0 then element = arr[i] and increase the counter if same element appears otherwise decrease the counter, at the end when we have finished the iteration, the ELEMENT 's frequency has to be checked if it is >(n/2). TC: O(n)+O(n)(as the array might not contain a majority element), SC: O(1).
 
  Q4 Maximum sum, returning sum
      Brute: take all subarray and find sum then check for maxsum. TC: O(n^3) SC: O(1).
