@@ -4,3 +4,13 @@
  Q2 Frog Jump
      https://www.codingninjas.com/studio/problems/frog-jump_3621012?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
      
+ Q3 Frog Jump 'k' distance
+     https://www.codingninjas.com/studio/problems/minimal-cost_8180930?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+
+ Q4 House Robber
+     https://leetcode.com/problems/house-robber/description/
+     We will either rob the current house or the next one, if we rob the present house then we will add the gains otherwise we won't.
+
+ Q5 House Robber II
+     https://leetcode.com/problems/house-robber-ii/description/
+     Same as previous just we take 2 vectors, in one we don't push 0th element and  in the other we don't push the last element, also send different dp vectors

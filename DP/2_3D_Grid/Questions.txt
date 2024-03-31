@@ -1,0 +1,20 @@
+ Q1 Ninja’s Training
+     https://www.codingninjas.com/studio/problems/ninja%E2%80%99s-training_3621003?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+
+ Q2 Unique Paths
+     https://leetcode.com/problems/unique-paths/description/
+
+ Q3 Unique Paths II
+     https://leetcode.com/problems/unique-paths-ii/
+
+ Q4 Minimum path sum
+     https://leetcode.com/problems/minimum-path-sum/description/
+
+ Q5 Minimum path sum in triangular grid
+     https://leetcode.com/problems/triangle/description/
+
+ Q6 Minimum Falling Path Sum
+     https://leetcode.com/problems/minimum-falling-path-sum/description/
+
+ Q7 Chocolate pickup 
+     https://www.codingninjas.com/studio/problems/chocolate-pickup_3125885?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM

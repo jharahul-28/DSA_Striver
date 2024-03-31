@@ -1,0 +1,8 @@
+ Q1 Introduction to BST
+   https://www.naukri.com/code360/problems/binary-search-trees_8160443?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+
+ Q2 Search in a Binary Search Tree
+   https://leetcode.com/problems/search-in-a-binary-search-tree/description/
+
+ Q3 Minimum element in BST
+   https://www.naukri.com/code360/problems/minimum-element-in-bst_8160462?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf

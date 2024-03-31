@@ -1,0 +1,5 @@
+ Q1 Subset Sum Equal To K
+     https://www.codingninjas.com/studio/problems/subset-sum-equal-to-k_1550954?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+
+ Q2 Partition Equal Subset Sum
+     https://leetcode.com/problems/partition-equal-subset-sum/description/

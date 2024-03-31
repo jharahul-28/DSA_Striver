@@ -1,0 +1,29 @@
+ Q1 Ceil from BST
+   https://www.naukri.com/code360/problems/ceil-from-bst_920464?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+
+ Q2 Floor from BST
+   https://www.naukri.com/code360/problems/floor-from-bst_625868?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+
+ Q3 Insert into a Binary Search Tree
+   https://leetcode.com/problems/insert-into-a-binary-search-tree/description/
+
+ Q4 Delete Node in a BST
+   https://leetcode.com/problems/delete-node-in-a-bst/description/
+
+ Q5 Kth Smallest Element in a BST
+   https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/
+
+ Q6 Validate Binary Search Tree
+   https://leetcode.com/problems/validate-binary-search-tree/description/
+
+ Q7 Lowest Common Ancestor of a Binary Search Tree
+   https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/
+
+ Q8 Construct Binary Search Tree from Preorder Traversal
+   https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/description/
+
+ Q9 Predecessor And Successor In BST
+   https://www.naukri.com/code360/problems/predecessor-and-successor-in-bst_893049?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+
+ Q11 Two Sum IV - Input is a BST
+   https://leetcode.com/problems/two-sum-iv-input-is-a-bst/description/

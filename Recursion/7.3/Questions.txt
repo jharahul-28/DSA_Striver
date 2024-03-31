@@ -1,3 +1,17 @@
  Q1 Palindrome Partitioning
      https://leetcode.com/problems/palindrome-partitioning/
      We partition after each index and then increase the distance between partitions, before we check the substring before partition is palindrome or not.
+
+ Q2 Word Search
+     https://leetcode.com/problems/word-search/description/
+     For each pair of coordinates we have 4 options, we also have to prevent us from visiting visited cells
+
+ Q3 N queen
+     https://leetcode.com/problems/n-queens/
+     For each col we have the entire col to put a queen and we have to check for upper left and upper right and same row for the presence of Queen.
+
+ Q4 Rat in a maze
+     https://www.geeksforgeeks.org/problems/rat-in-a-maze-problem/1
+
+ Q7 Sudoku Solver
+     https://leetcode.com/problems/sudoku-solver/

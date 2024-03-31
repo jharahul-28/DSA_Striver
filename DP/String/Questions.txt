@@ -1,0 +1,34 @@
+ Q1 Longest Common String
+     https://www.codingninjas.com/studio/problems/longest-common-subsequence_624879?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+     Tabulation: We right shifted the index by 1 so that the base cases can be taken into account
+
+ Q2 Print Longest Common Subsequence
+     https://www.codingninjas.com/studio/problems/print-longest-common-subsequence_8416383?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+
+ Q3 Longest Common Substring
+     https://www.codingninjas.com/studio/problems/longest-common-substring_1235207?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+     Like common subsequence we code the tabulation but because its substring , if characters dont match then we store 0 as answer.
+
+ Q4 Longest Palindromic Subsequence
+     https://leetcode.com/problems/longest-palindromic-subsequence/description/
+     We store the reverse of the string in another string, as we have to check palindrome, now we find LCS of the two string
+
+ Q5 Minimum insertions to make a string palindrome
+     https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description/
+     We store the size of the Longest Palindromic Subsequence, and subtract it from the size of the string as those many letters are missing
+
+ Q6 Minimum Number of Deletions and Insertions
+     https://leetcode.com/problems/delete-operation-for-two-strings/
+
+ Q7 Shortest Common Supersequence 
+     https://leetcode.com/problems/shortest-common-supersequence/description/
+
+ Q8 Distinct Subsequences
+     https://leetcode.com/problems/distinct-subsequences/description/
+     If the character matches then we have the option of take not take
+
+ Q9 Edit Distance
+     https://leetcode.com/problems/edit-distance/
+
+ Q10 Wildcard Matching
+     https://leetcode.com/problems/wildcard-matching/description/
