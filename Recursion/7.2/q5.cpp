@@ -29,3 +29,24 @@ vector<vector<int>> subarraysWithSumK(vector<int> a, long long k) {
     }
     return b;
 }
+
+//memoization
+class Solution{
+
+	public:
+	int rec(int i, int n, int s, int sum , int arr[], vector<vector<long long>>& dp){
+	    if(i==n) {
+	        if(s==sum) return dp[i][s]=1;
+	        else return dp[i][s]=0;
+	    }
+	    if(dp[i][s]!=-1) return dp[i][s];
+	    return dp[i][s]=(rec(i+1,n,s,sum,arr,dp)+(((s+arr[i])<= sum) ? (rec(i+1,n,s+arr[i],sum,arr,dp)) : 0))%1000000007;
+	}
+	int perfectSum(int arr[], int n, int sum)
+	{
+        // Your code goes here
+        vector<vector<long long>> dp(n+1, vector<long long> (sum+1,-1));
+        return rec(0,n,0,sum,arr,dp)%1000000007;
+	}
+	  
+};

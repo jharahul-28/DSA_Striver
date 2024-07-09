@@ -13,5 +13,13 @@
  Q4 Rat in a maze
      https://www.geeksforgeeks.org/problems/rat-in-a-maze-problem/1
 
+ Q5 Word Break
+     https://leetcode.com/problems/word-break/
+     look for the match of the first word from wordDict, then if we reach the end of the word look for another match going forward, if it doesn't match then return false and look for next match.
+
+ Q6 M coloring problem
+     https://www.geeksforgeeks.org/problems/m-coloring-problem-1587115620/1
+     For each node, check for each color, if one case satifies then break.
+
  Q7 Sudoku Solver
      https://leetcode.com/problems/sudoku-solver/

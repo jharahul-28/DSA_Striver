@@ -1,0 +1,58 @@
+Q1. Shortest path in Undirected Graph
+   https://www.geeksforgeeks.org/problems/shortest-path-in-undirected-graph-having-unit-distance/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=shortest-path-in-undirected-graph-having-unit-distance
+   Use BFS, in queue store the distance
+
+Q2 Shortest path in Directed Acyclic Graph
+    https://www.geeksforgeeks.org/problems/shortest-path-in-undirected-graph/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=shortest-path-in-undirected-graph
+    Topo sort  to reduce TC
+
+Q3 Implementing Dijkstra Algorithm
+    https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1
+    With priority Queue. Look into TC
+
+Q3 Implementing Dijkstra Algorithm
+    https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1
+    With set
+
+G35 Shortest Path in Weighted undirected graph
+    https://www.geeksforgeeks.org/problems/shortest-path-in-weighted-undirected-graph/1
+    In an array store the parent node of the shortestes path for each node.
+
+Q5 Shortest Path in Binary Matrix
+     https://leetcode.com/problems/shortest-path-in-binary-matrix/description/
+     Apply Dijkstra, as soon as we reach detination, return distance.
+
+Q6 Path With Minimum Effort
+     https://leetcode.com/problems/path-with-minimum-effort/description/
+     Apply Dijkstra, store the maxEffort and compare for minimum of the maximum effort for each node
+
+Q7 Cheapest Flights Within K Stops
+     https://leetcode.com/problems/cheapest-flights-within-k-stops/description/
+     Apply Dijkstra, store the stops, break when stops>k, in priority_queue sort as per stops(k)
+
+Q8 Network Delay Time
+     https://leetcode.com/problems/network-delay-time/description/
+
+Q9 Number of Ways to Arrive at Destination
+     https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/
+
+Q10 Minimum Multiplications to reach End
+     https://www.geeksforgeeks.org/problems/minimum-multiplications-to-reach-end/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=minimum-multiplications-to-reach-end
+
+Q11 Distance from the Source (Bellman-Ford Algorithm)
+     https://www.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1
+     Traverse (n-1) times
+
+Q12 Floyd Warshall
+     https://www.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1
+     Go to all nodes from all nodes via all nodes.
+
+Q13 Find the City With the Smallest Number of Neighbors at a Threshold Distance
+     https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/description/
+     User Floyd Warshall, then check for thresholdDistance and min-max
+
+//Must visit Q9
+
+//Dijkstra Algo is used for single source shortest path with no -ve weights.
+//Bellman-Ford Algo is used for single source shortest path with -ve edge-weights.
+//Floyd Warshall Algo is multi source shortest path algo with -ve edge weights.

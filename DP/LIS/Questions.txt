@@ -2,9 +2,16 @@
      https://leetcode.com/problems/longest-increasing-subsequence/submissions/1137852564/
 
  Q2 Printing Longest Increasing Subsequence
-     https://www.codingninjas.com/studio/problems/printing-longest-increasing-subsequence_8360670?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+     https://www.geeksforgeeks.org/problems/printing-longest-increasing-subsequence/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=printing-longest-increasing-subsequence
 
  Q3 Longest Increasing Subsequence
-     https://www.codingninjas.com/studio/problems/longest-increasing-subsequence_630459?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+     https://www.geeksforgeeks.org/problems/longest-increasing-subsequence-1587115620/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=longest-increasing-subsequence
+     
+ Q4 Largest Divisible Subset
+     https://leetcode.com/problems/largest-divisible-subset/description/
 
- Q4 
+ Q5 Longest String Chain
+     https://leetcode.com/problems/longest-string-chain/description/
+
+ Q6 Longest Bitonic subsequence
+     https://www.geeksforgeeks.org/problems/longest-bitonic-subsequence0824/1

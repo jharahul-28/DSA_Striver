@@ -1,0 +1,27 @@
+Q1. Topo Sort
+     https://www.geeksforgeeks.org/problems/topological-sort/1
+     Store those whose dfs is completed
+
+Q2. Kahn Algo
+     https://www.geeksforgeeks.org/problems/topological-sort/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=topological-sort
+     Decrease the indegree until it becomes zero, then add them to answer vector
+
+Q3. Detect cycle in a directed graph
+     https://www.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1
+     If the resulting size of topo sort is less than V then it is cyclic
+
+Q4 Course Schedule
+     https://leetcode.com/problems/course-schedule/description/
+     We form a graph, if its cyclic then false, else true
+
+Q5 Course Schedule - II
+     https://leetcode.com/problems/course-schedule-ii/description/
+     Create Topo sort, if size of topo sort != V , return empty array
+
+Q6 Find Eventual Safe States
+     https://leetcode.com/problems/find-eventual-safe-states/description/
+     Reverse the direction of graph and apply topo sort
+
+Q7 Alien Dictionary
+     https://www.geeksforgeeks.org/problems/alien-dictionary/1
+     Compare adjacent and create adjacency list, apply topo sort 

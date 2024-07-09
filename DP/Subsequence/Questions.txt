@@ -3,3 +3,32 @@
 
  Q2 Partition Equal Subset Sum
      https://leetcode.com/problems/partition-equal-subset-sum/description/
+
+ Q3 Partition Set Into 2 Subsets With Min Absolute Sum Diff
+     https://www.naukri.com/code360/problems/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum_842494?source=youtube&campaign=striver_dp_videos&utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_dp_videos&leftPanelTabValue=PROBLEM
+     The last row of the tabular data (ind,target) shows whether it is possible to obtain a target of "target" from the index "ind". We traverse the last row to check if it is possible, if possible then we check for lowest.
+
+ Q4 Count Subsets with Sum K
+     https://www.geeksforgeeks.org/problems/perfect-sum-problem5633/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=perfect-sum-problem
+
+ Q5 Partitions with Given Difference
+     https://www.geeksforgeeks.org/problems/partitions-with-given-difference/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=partitions-with-given-difference
+     We find total sum. We know s1+s2=totsum, and s1-s2=d, hence s1=(totSum-d)/2. Then we use the algo to find whether the sum=s1 exists, and count the existence.
+
+ Q6 0 - 1 Knapsack Problem
+     https://www.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1
+
+ Q7 Coin Change
+     https://leetcode.com/problems/coin-change/description/
+
+ Q8 Target Sum
+     https://leetcode.com/problems/target-sum/description/
+
+ Q9 Coin Change II
+     https://leetcode.com/problems/coin-change-ii/description/
+
+ Q10 Knapsack with Duplicate Items
+     https://www.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=knapsack-with-duplicate-items
+
+ Q11 Rod Cutting
+     https://www.geeksforgeeks.org/problems/rod-cutting0840/1

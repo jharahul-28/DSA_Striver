@@ -1,0 +1,19 @@
+Q1 MST theory
+
+Q2 Minimum Spanning Tree (Prim's Algo)
+      https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1
+   
+Q3 Union by rank
+
+Q4 Union by size
+
+Q5 Minimum Spanning Tree (Kruskal's Algo)
+      https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1
+    
+Q6 Number of Operations to Make Network Connected
+      https://leetcode.com/problems/number-of-operations-to-make-network-connected/description/
+      Number of operations is equal to the number of components -1. First check if there are enough edges.
+
+Q7 Most Stones Removed with Same Row or Column
+      https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/description/
+      Let all stones be nodes. Connect all nodes that are on the same row or column. They will form components. Only one stone from each component will be left after removal.

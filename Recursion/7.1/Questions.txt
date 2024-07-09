@@ -1,5 +1,16 @@
- Q1  Power
+ Q1 Implement ATOI using recursion
+     https://leetcode.com/problems/string-to-integer-atoi/
+
+ Q2  Power
      If the power is -ve, we reciprocate the answer. TC: O(log n)
     
- Q2 Good number
-     
+ Q3 Count Good number
+     https://leetcode.com/problems/count-good-numbers/
+
+ Q4 Sort a stack using recursion
+     https://www.geeksforgeeks.org/problems/sort-a-stack/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=sort-a-stack
+     Pop the top, check for sort condition with the new top, repeat n times.
+
+ Q5 Reverse a stack
+     https://www.geeksforgeeks.org/problems/reverse-a-stack/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=reverse-a-stack
+     for the ith index from the end, pop till the stack is of size i, then insert the number.

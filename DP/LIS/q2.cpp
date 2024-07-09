@@ -1,34 +1,28 @@
-vector<int> printingLongestIncreasingSubsequence(vector<int> nums, int n) {
-    vector<int> dp(n,1);
-    for(int i=0;i<n;i++){
-		int maxi=0;
-		for(int j=0;j<i;j++){
-			if(nums[i]>nums[j]){
-				maxi=max(maxi,dp[j]);
-			}
-		}
-		dp[i]+=maxi;
+class Solution {
+  public:
+    vector<int> longestIncreasingSubsequence(int n, vector<int>& nums) {
+        // Code here
+        int lastInd=0, maxi=1, prevInd=0;
+        vector<int> dp(n,1), ans, backTrack(n);
+        for(int i=0;i<n;i++){
+            backTrack[i]=i;
+            for(int prev=0;prev<i;prev++){
+                if(nums[prev]<nums[i] && 1+dp[prev] > dp[i]){
+                    dp[i]=1+dp[prev];
+                    backTrack[i]=prev;
+                } 
+            }
+            if(dp[i] > maxi){
+                maxi= dp[i];
+                prevInd=i;
+            }
+        }
+        ans.push_back(nums[prevInd]);
+        while(backTrack[prevInd]!=prevInd){
+            prevInd= backTrack[prevInd];
+            ans.push_back(nums[prevInd]);
+        }
+        reverse(ans.begin(), ans.end());
+        return ans;
     }
-    int maxi=0;
-    for(int i=1;i<n;i++){
-		if(dp[i]>dp[maxi]) maxi=i;
-	}
-	int j=dp[maxi];
-	vector<int> ans(j);
-	j--;
-	ans[j]=nums[maxi];
-	j--;
-	for(int i=maxi-1;i>=0;){
-		if(dp[i]==(dp[maxi]-1)){
-			ans[j]=nums[i];
-			maxi=i;
-			j--;
-			i--;
-		}
-		while(dp[i]!=(dp[maxi]-1)){
-			i--;
-			if(i<0) break;
-		}
-	}
-	return ans;
-}
+};

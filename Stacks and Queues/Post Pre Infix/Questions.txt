@@ -1,0 +1,15 @@
+ Q1 Infix to Postfix
+     https://www.geeksforgeeks.org/problems/infix-to-postfix-1587115620/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=infix-to-postfix
+     Store the variables in order they appear, and the operators such that the operators are stored in stack in a particular order and the order is maintained with pop operations.
+
+ Q2 Prefix to Infix Conversion
+     https://www.geeksforgeeks.org/problems/prefix-to-infix-conversion/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=prefix-to-infix-conversion
+     from right store the letters, when encounter operator, pop the last two and push ' "("+op1+c+op2+")" ' into the stack.
+
+ Q3 Prefix to Postfix Conversion
+     https://www.geeksforgeeks.org/problems/prefix-to-postfix-conversion/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=prefix-to-postfix-conversion
+     Implement pre to in then in to post
+
+ Q5 Postfix to Infix Conversion
+     Postfix to Infix Conversion
+     Minor changes in Q2

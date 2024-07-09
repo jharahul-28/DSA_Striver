@@ -1,0 +1,3 @@
+Q3 Kojaraju Algo
+   https://www.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1
+   Store the DFS, reverse the DG, now traverse as per the DFS and count components.

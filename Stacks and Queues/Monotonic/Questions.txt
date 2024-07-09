@@ -6,3 +6,21 @@
  Q2 Next Greater Element II
      https://leetcode.com/problems/next-greater-element-ii/description/
      Just traverse and update stack acc. to previous question and then the process remains same.
+
+ Q4 No. of NGE
+     No use of stack, just use loops.
+
+ Q5 Trapping Rain Water
+     https://leetcode.com/problems/trapping-rain-water/description/
+
+ Q7 Asteroid Collision
+     https://leetcode.com/problems/asteroid-collision/description/
+     We use stack to eliminate asteroid. If the asteroid is moving in +ve direction we insert it into the stack, if -ve direction then we check if we have a less weight +ve asteroid to eliminate, if stack empty then we push the asteroid in stack else we see which asteroid to be eliminated or if both to be eliminated.
+
+ Q9 Remove K Digits
+     https://leetcode.com/problems/remove-k-digits/description/
+     Push digits from the left of string, if we find a number less than top of a stack, pop.
+
+ Q10 Largest Rectangle in Histogram
+     https://leetcode.com/problems/largest-rectangle-in-histogram/description/
+     Two stacks and two vector. Stack for implementing NSE, vector containing index of NSE. Then traverse the vector and calculate height of each rectangle.

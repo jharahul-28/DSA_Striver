@@ -1,0 +1,34 @@
+Q1 N meetings in one room
+     https://www.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1
+     Sort as per end time
+
+Q2 Jump Game
+     https://leetcode.com/problems/jump-game/description/
+     Keep storing max reachable point.
+
+Q3 Jump Game II
+     https://leetcode.com/problems/jump-game-ii/description/
+     Take two pointers, the index between those pointers can be reached within the same number of jumps. From those indexes reach the next most farthest index.
+
+Q4 Minimum Platforms
+     https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1
+     Keep a counter, if arrival then inc. , if departure then decrease
+
+Q5 Job Sequencing Problem
+     https://www.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1
+     sort acc. to profit, then create an array which stores the maxPRofit till that deadline day, look for places where we can do the work before deadline.
+
+Q6 Candy
+      https://leetcode.com/problems/candy/description/
+      once initialise the left array with starting 1, next go from right with righmost element 1, then take max of the 2 for sum
+
+Q9 Insert interval (first refer to merge intervals, Q10)
+     https://leetcode.com/problems/insert-interval/
+     push_back new interval, sort, now merge intervals
+
+Q10 Merge intervals
+     https://leetcode.com/problems/merge-intervals/
+
+Q11 Non-overlapping Intervals
+     https://leetcode.com/problems/non-overlapping-intervals/description/
+     Same as before , just reverse the return statement

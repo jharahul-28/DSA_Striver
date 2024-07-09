@@ -13,24 +13,19 @@ int largestSubArrayLength(vector <int> v, int k){
 }
 
 //better
-int largestSubArrayLength(vector <int> v, long long k){
-    int maxLen=0;
-    map <int, int> preSum;
-    long long sum=0;
-    for(int i=0;i<v.size();i++){
-        sum+=v[i];
-        if(sum==k){
-            maxLength= max(maxLength, i+1);
-        }
-        long long rem= sum-k;
-        if (preSum.find(rem) =! v.end()){
-            int len= i-preSum[rem];
-            maxLength= max(maxLength, len);
-        }
-        if(preSum.find(sum) == v.end())
-        preSum[sum]=i;
+#include <bits/stdc++.h> 
+int getLongestSubarray(vector<int>& nums, int k){
+    int n=nums.size();
+    map<int,int> preSum;
+    int s=0, ml=0;
+    for(int i=0;i<n;i++){
+        s+=nums[i];
+        if(s==k) ml=max(ml,i+1);
+        int rem=s-k;
+        if(preSum.find(rem)!=preSum.end()) ml=max(ml,i-preSum[rem]);
+        if(preSum.find(s)==preSum.end()) preSum[s]=i;
     }
-    return maxLen;
+    return ml;
 }
 
 //optimal

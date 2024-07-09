@@ -10,8 +10,8 @@ int longestIncreasingSubsequence(int arr[], int n)
             v.push_back(arr[i]);
         }
         else{
-            int ind=lower_bound(v.begin(),v.end(),arr[i])-v.begin();
-            v[ind]=arr[i];
+            auto ind=lower_bound(v.begin(),v.end(),arr[i])-v.begin();
+            *ind =arr[i];
         }
     }
     return len;
